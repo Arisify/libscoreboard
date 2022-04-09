@@ -1,0 +1,6 @@
+name: libscoreboard
+version: 1.0.0
+antigen: arie\scoreboard
+php: [8.0]
+authors: [Arie]
+description: A virion for adding scoreboard to PMMP
