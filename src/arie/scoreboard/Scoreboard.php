@@ -3,15 +3,12 @@ declare(strict_types=1);
 
 namespace arie\skywar\scoreboard;
 
-use pocketmine\event\entity\EntityTeleportEvent;
 use pocketmine\event\Listener;
-use pocketmine\event\player\PlayerQuitEvent;
 use pocketmine\network\mcpe\protocol\RemoveObjectivePacket;
 use pocketmine\network\mcpe\protocol\SetDisplayObjectivePacket;
 use pocketmine\network\mcpe\protocol\SetScorePacket;
 use pocketmine\network\mcpe\protocol\types\ScorePacketEntry;
 use pocketmine\player\Player;
-use pocketmine\plugin\Plugin;
 use pocketmine\utils\SingletonTrait;
 
 class Scoreboard implements Listener{
