@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace arie\skywar\scoreboard;
+namespace arie\scoreboard;
 
 use pocketmine\network\mcpe\protocol\RemoveObjectivePacket;
 use pocketmine\network\mcpe\protocol\SetDisplayObjectivePacket;
