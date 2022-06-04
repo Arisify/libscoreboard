@@ -1,6 +1,5 @@
 # libscoreboard
-A virion for adding scoreboard to PMMP.
-
+A virion for adding scoreboard to PMMP.\
 Instruction coming soon...
 
 ## Are there any issues?

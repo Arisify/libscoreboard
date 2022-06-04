@@ -34,6 +34,8 @@ class Scoreboard{
 	use SingletonTrait;
 
 	private array $scoreboards = [];
+	private const MIN_SCORE = 0;
+	private const MAX_SCORE = 16;
 
 	public function create(Player $player, string $objectiveName, string $displayName, string $criteriaName = "dummy", int $sortOrder = 0, string $displaySlot = "sidebar") : void{
 		if (isset($this->scoreboards[$player->getName()])) {
@@ -62,7 +64,7 @@ class Scoreboard{
 	}
 
 	public function setLine(PLayer $player, int $score, string $message, int $type = ScorePacketEntry::TYPE_FAKE_PLAYER) : bool{
-		assert($score < 16 && $score > 0, "Line must be greater than 0 and smaller than 16");
+		assert($score < self::MAX_SCORE && $score > self::MIN_SCORE, "Line must be greater than " . self::MIN_SCORE . " and smaller than " . self::MAX_SCORE);
 		if (isset($this->scoreboards[$player->getName()])) {
 			return false;
 		}
